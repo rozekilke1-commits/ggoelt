@@ -2,36 +2,37 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
-  <title>ÕıÔÚÌø×ªÏÂÔØ...</title>
-  <!-- 51.LA Í³¼Æ½Å±¾£¨Äã×Ô¼º´Ó51ºóÌ¨»ñÈ¡Ìæ»»ÏÂÃæÕâ¶Î£© -->
+  <title>æ­£åœ¨è·³è½¬ä¸‹è½½...</title>
+  <!-- 51.LA ç»Ÿè®¡è„šæœ¬ï¼ˆä½ è‡ªå·±ä»51åå°è·å–æ›¿æ¢ä¸‹é¢è¿™æ®µï¼‰ -->
 <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-<script>LA.init({id:"3M7AElJrhUDzUQQx",ck:"3M7AElJrhUDzUQQx"})</script>
+<script>LA.init({id:"3NyXdTr2OEEe76xF",ck:"3NyXdTr2OEEe76xF"})</script>
 </head>
 <body>
-  <h2 style="text-align:center;">ÕıÔÚÎªÄú×¼±¸ÏÂÔØ£¬ÇëÉÔºò...</h2>
+  <h2 style="text-align:center;">æ­£åœ¨ä¸ºæ‚¨å‡†å¤‡ä¸‹è½½ï¼Œè¯·ç¨å€™...</h2>
 
   <script>
-    // Í¨ÓÃ»ñÈ¡ URL ²ÎÊı·½·¨
+    // é€šç”¨è·å– URL å‚æ•°æ–¹æ³•
     function getParam(name) {
       const params = new URLSearchParams(window.location.search);
       return params.get(name);
     }
 
-    const file = getParam("file"); // Àı£ºdownload.html?file=https://xxx.com/a.zip
+    const file = getParam("file"); // ä¾‹ï¼šdownload.html?file=https://xxx.com/a.zip
 
     if (file) {
-      // ¼ÇÂ¼×Ô¶¨ÒåÊÂ¼ş£¨ÓÃÓÚ51.LAÍ³¼Æ£©
+      // è®°å½•è‡ªå®šä¹‰äº‹ä»¶ï¼ˆç”¨äº51.LAç»Ÿè®¡ï¼‰
       if (typeof LA !== "undefined" && LA.event) {
-        LA.event("ÏÂÔØÌø×ªµã»÷");
+        LA.event("ä¸‹è½½è·³è½¬ç‚¹å‡»");
       }
 
-      // ÑÓÊ±Ìø×ª£¬¸øÍ³¼ÆÁô×ãÊ±¼ä
+      // å»¶æ—¶è·³è½¬ï¼Œç»™ç»Ÿè®¡ç•™è¶³æ—¶é—´
       setTimeout(() => {
         window.location.href = decodeURIComponent(file);
       }, 1500);
     } else {
-      document.body.innerHTML = "<h2 style='text-align:center;color:red;'>ÏÂÔØÁ´½Ó´íÎó£¡</h2>";
+      document.body.innerHTML = "<h2 style='text-align:center;color:red;'>ä¸‹è½½é“¾æ¥é”™è¯¯ï¼</h2>";
     }
   </script>
 </body>
+
 </html>
